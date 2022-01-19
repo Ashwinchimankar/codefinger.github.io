@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="indexpage.css">
+
+     
+    <title>c language</title>
+</head>
+
+<body>
+    
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <nav class="navbar">
+        <a href="index.html" target="_self" >
+        <div class="logo">
+            <span >
+              
+                    <img src="finger.png" class="finbtn"/>
+                  
+                </span>
+                
+            <span class="logoname">
+           <h1></b>CodeFinger</b></h1>
+        </span>
+          </div></a>
+        <div class="navelement">
+            <b>
+                
+        <a href="c_language.html" class="a">C Language</a>
+        <a href="data_structure.html" class="a">Data Structure</a>
+        <a href="feedback.html" class="a">Feedback</a>
+        <a href="table.html" class="a">Time complexity</a>
+        
+    </b>
+    </div>
+  
+        <div class="login-container"><!--buttons for Login/Sign Up-->
+            <button type="submit">Login/Sign Up</button>
+        </div> 
+
+
+        <div class="linksection">
+            <div class="linksection" id="linksec">
+                <a href="#section1" class="link">Your First C Program</a>
+                <a href="#section2" class="link">Print integer (User Input)</a>
+                <a href="#section3" class="link">Addition of two intger</a>
+                <a href="#section4" class="link">multiply two decimal value (Floting point value)</a>
+                <a href="#section5" class="link">swapping of two number using temp veriable</a>
+                <a href="#section6" class="link">Check Even Or Odd</a>
+                <a href="#section7" class="link">Find the largest among three numbers</a>
+                <a href="#section8" class="link">Leap year check</a>
+                <a href="#section9" class="link">Factorial numbers</a>
+                <a href="#section10" class="link">Multipication table</a>
+                <a href="#section11" class="link">Fibonacci Sequence</a>
+                <a href="#section12" class="link">Palindrome Check</a>
+                <a href="#section13" class="link">Prime number or No</a>
+                <a href="#section14" class="link">Armstrong number or Not</a>
+            </div>
+            </div>
+        
+    </nav>
+      
+    <!--<nav>
+    <span class="logo"><img src="copy.png" alt=""></span>
+    <div class="content center">
+         C language Cheatsheet
+    </div>
+    </nav>-->
+
+<main>
+    
+ <div class="container1">
+    <ol>
+        <li><b id="section1">Your First C Program </b>
+            <p class="detail">#include <stdio.h>, stdio is the library where the function printf is defined. printf is used for generating output. Before using this function, we have to first include the required file, also known as a header file (.h).
+
+                You can also create your own functions, group them in header files and declare them at the top of the program to use them. To include a file in a program, use pre-processor directive</p>
+                
+                
+             <pre class="panda"><code id="content-copy"> 
+#include &lt;stdio.h&gt;
+int main() {
+ // printf() displays the string inside quotation
+printf("Hello, World!");
+return 0;
+}
+</code>
+    <button  id="btn-copy" onclick="copy('content-copy')" class="btn" >copy</button>
+</pre>
+            </li> 
+
+
+            
+  <li><b id="section2">Print integer (User Input)</b>
+    <p class="detail">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio quae error consequatur eum repellat, sequi unde dolorum delectus omnis! Praesentium, error quisquam temporibus exercitationem iure minus pariatur labore minima iste.</p>
+          <pre class="panda"><code id="content-copy2">
+ #include &lt;stdio.h&gt;
+ int main() {   
+ int number;
+                                                
+printf("Enter an integer: ");                                           
+// reads and stores input
+ scanf("%d", &number);                                               
+// displays output
+ printf("You entered: %d", number);                                    
+ return 0;
+ }
+</code>
+   <button  id="btn-copy2" onclick="copy('content-copy2')" class="btn" >copy</button> 
+</pre>
+</li> 
+    
+
+ <li><b id="section3">Addition of two intger.</b>
+    <p class="detail">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum ex ullam repellat voluptatibus, repudiandae nulla veritatis unde consequuntur similique tenetur labore enim debitis pariatur inventore dolorem dolore? Recusandae, hic molestias.</p>
+        <pre class="panda"><code id="content-copy3">
+            
+ #include &lt;stdio.h&gt;
+ int main() {    
+                    
+int number1, number2, sum;
+                        
+    printf("Enter two integers: ");
+    scanf("%d %d", &number1, &number2);
+                    
+    // calculating sum
+     sum = number1 + number2;      
+                        
+    printf("%d + %d = %d", number1, number2, sum);
+ return 0;
+ }                         
+   </code>
+   <button  id="btn-copy3" onclick="copy('content-copy3')" class="btn" >copy</button> 
+</pre>
+           </li> 
+
+
+ <li><b id="section4">multiply two decimal value (Floting point value)</b>
+    <p class="detail">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius rerum sapiente consequatur sed! Ad, eaque! Non labore rem laboriosam ea, distinctio debitis, suscipit, eveniet vel id dolorum accusamus quaerat eos?</p>
+          <pre class="panda"><code id="content-copy4">
+            
+ #include &lt;stdio.h&gt;
+ int main() {
+double a, b, product;
+     printf("Enter two numbers: ");
+     scanf("%lf %lf", &a, &b);  
+                 
+     // Calculating product
+     product = a * b;
+                
+     // %.2lf displays number up to 2 decimal point
+     printf("Product = %.2lf", product);
+                    
+ return 0;
+}
+</code>
+<button  id="btn-copy4" onclick="copy('content-copy4')" class="btn" >copy</button> 
+</pre>
+</li>
+<!--<button type="button" class="btn" onclick="CopyToClipboard('copy_txt');return false;">copy</button> -->
+
+
+<li><b id="section5">swapping of two number using temp veriable</b>
+    <p class="detail">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas vitae excepturi doloremque eius quae error repudiandae provident amet? Corrupti perspiciatis molestias dolor accusantium error, quaerat animi nesciunt quibusdam expedita maiores!</p>
+    <pre class="panda"><code id="content-copy5">
+        
+ #include&lt;stdio.h&gt;
+ int main() {
+ double first, second, temp;
+         
+    printf("Enter first number: ");
+     scanf("%lf", &first);
+     printf("Enter second number: ");
+     scanf("%lf", &second);
+        
+     // value of first is assigned to temp
+     temp = first;
+        
+     // value of second is assigned to first
+     first = second;
+        
+     // value of temp (initial value of first) is assigned to second
+     second = temp;
+        
+    // %.2lf displays number up to 2 decimal points
+    printf("\nAfter swapping, first number = %.2lf\n", first);
+    printf("After swapping, second number = %.2lf", second);
+return 0;
+}
+
+</code>
+<button  id="btn-copy5" onclick="copy('content-copy5')" class="btn" >copy</button> 
+</pre>
+</li>
+ 
+
+<li><b id="section6">Check Even Or Odd.</b>
+    <p class="detail">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint adipisci numquam ducimus incidunt ex alias, assumenda consequuntur officiis temporibus sit aut magni repudiandae sed recusandae dignissimos quaerat aspernatur nesciunt vitae!
+    </p>
+    <pre class="panda"><code id="content-copy6">
+#include &lt;stdio.h&gt;
+ int main() {
+ int num;
+     printf("Enter an integer: ");
+     scanf("%d", &num);
+        
+     // true if num is perfectly divisible by 2
+     if(num % 2 == 0)
+          printf("%d is even.", num);
+     else
+          printf("%d is odd.", num);
+            
+ return 0;
+ }
+                                 
+</code>
+<button  id="btn-copy6" onclick="copy('content-copy6')" class="btn" >copy</button> 
+</pre>
+       </li>
+
+
+       
+<li><b id="section7">Find the largest among three numbers</b>
+    <p class="detail">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi iste saepe, cum nobis tenetur ipsa aspernatur neque et, voluptatum repudiandae hic? Esse ullam ad adipisci voluptates commodi sunt obcaecati natus.</p>
+    <pre class="panda"><code id="content-copy7">
+ #include &lt;stdio.h&gt;
+ int main() {
+
+    double n1, n2, n3;
+        printf("Enter three different numbers: ");
+        scanf("%lf %lf %lf", &n1, &n2, &n3);
+        
+        // if n1 is greater than both n2 and n3, n1 is the largest
+        if (n1 >= n2 && n1 >= n3)
+             printf("%.2f is the largest number.", n1);
+        
+         // if n2 is greater than both n1 and n3, n2 is the largest
+        if (n2 >= n1 && n2 >= n3)
+             printf("%.2f is the largest number.", n2);
+        
+         // if n3 is greater than both n1 and n2, n3 is the largest
+         if (n3 >= n1 && n3 >= n2)
+             printf("%.2f is the largest number.", n3);
+        
+ return 0;
+ }
+                   
+</code>
+<button  id="btn-copy7" onclick="copy('content-copy7')" class="btn" >copy</button> 
+</pre>
+       </li>
+
+ <li><b id="section8">Leap year check</b>
+    <p class="detail">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, aperiam nihil quod, reprehenderit autem optio suscipit iusto saepe facere tenetur sed unde ad ipsa deserunt culpa quasi blanditiis incidunt magni!</p>
+        <pre class="panda"><code id="content-copy8">
+ #include <stdio.h>
+int main() 
+{
+ int year;
+        printf("Enter a year: ");
+        scanf("%d", &year);
+                
+         // leap year if perfectly divisible by 400
+        if (year % 400 == 0) {
+         printf("%d is a leap year.", year);
+         }
+         // not a leap year if divisible by 100
+         // but not divisible by 400
+         else if (year % 100 == 0) {
+         printf("%d is not a leap year.", year);
+         }
+        // leap year if not divisible by 100
+        // but divisible by 4
+        else if (year % 4 == 0) {
+        printf("%d is a leap year.", year);
+        }
+        // all other years are not leap years
+         else {
+          printf("%d is not a leap year.", year);
+        }
+                
+ return 0;
+ }
+                       
+    </code>
+    <button  id="btn-copy8" onclick="copy('content-copy8')" class="btn" >copy</button> 
+</pre>
+           </li>
+
+<li><b id="section9">Factorial numbers.</b>
+    <p class="detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, id accusantium, quaerat doloremque earum quisquam porro mollitia suscipit dolore iure et quibusdam, hic nulla unde laborum illum sequi facere repellendus?</p>
+        <pre class="panda"><code id="content-copy9">
+ #include &lt;stdio.h&gt;
+int main()
+ {
+ int n, i;
+ unsigned long long fact = 1;
+    printf("Enter an integer: ");
+    scanf("%d", &n);
+            
+    // shows error if the user enters a negative integer
+    if (n &lt; 0)
+         printf("Error! Factorial of a negative number doesn't exist.");
+     else {
+    for (i = 1; i &lt;= n; ++i)
+     {
+        fact *= i;
+     }
+    printf("Factorial of %d = %llu", n, fact);
+     }
+            
+return 0;
+ }
+            
+    </code>
+    <button  id="btn-copy9" onclick="copy('content-copy9')" class="btn" >copy</button> 
+</pre>
+</li>
+
+
+<li><b id="section10">Multipication table.</b>
+    <p class="detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolore dicta delectus expedita necessitatibus, incidunt hic commodi, voluptatibus consequatur blanditiis, tenetur suscipit nemo accusamus iusto quia ratione quam optio debitis?</p>
+    <pre class="panda"><code id="content-copy10">
+ #include &ll;stdio.h&gt;
+int main() {
+    int n, i;
+    printf("Enter an integer: ");
+    scanf("%d", &n);
+     for (i = 1; i &lt;= 10; ++i) {
+     printf("%d * %d = %d \n", n, i, n * i);
+     }
+ return 0;
+ }
+                   
+</code>
+<button  id="btn-copy10" onclick="copy('content-copy10')" class="btn" >copy</button> 
+</pre>
+</li>
+
+
+<li><b id="section11">Fibonacci Sequence</b>
+    <p class="detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita libero iste, nam architecto omnis asperiores, itaque totam voluptatem vero repellat exercitationem. Omnis expedita perferendis consectetur, dignissimos eum illum labore iusto!</p>
+    <pre class="panda"><code id="content-copy11">
+ #include &lt;stdio.h&gt;
+int main() {
+            
+int i, n;
+            
+ // initialize first and second terms
+int t1 = 0, t2 = 1;
+            
+ // initialize the next term (3rd term)
+ int nextTerm = t1 + t2;
+            
+ // get no. of terms from user
+ printf("Enter the number of terms: ");
+ scanf("%d", &n);
+            
+// print the first two terms t1 and t2
+printf("Fibonacci Series: %d, %d, ", t1, t2);
+            
+// print 3rd to nth terms
+for (i = 3; i &lt;= n; ++i) {
+ printf("%d, ", nextTerm);
+       t1 = t2;
+       t2 = nextTerm;
+       nextTerm = t1 + t2;
+     }
+            
+ return 0;
+}
+                               
+</code>
+<button  id="btn-copy11" onclick="copy('content-copy11')" class="btn" >copy</button> 
+</pre>
+</li>
+
+
+<li><b id="section12">Palindrome Check</b>
+    <p class="detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, ut. Quam repellat praesentium aliquid dolorum hic? Vero fugit illum, necessitatibus, quam eligendi, alias cum aliquam velit nisi optio ea. Eaque.</p>
+    <pre class="panda"><code id="content-copy12">
+#include &lt;stdio.h&gt;
+ int main() {
+int n, reversed = 0, remainder, original;
+                
+        printf("Enter an integer: ");
+        scanf("%d", &n);
+         original = n;
+            
+        // reversed integer is stored in reversed variable
+        while (n != 0) {
+             remainder = n % 10;
+            reversed = reversed * 10 + remainder;
+             n /= 10;
+             }
+            
+        // palindrome if orignal and reversed are equal
+         if (original == reversed)
+                 printf("%d is a palindrome.", original);
+         else
+                 printf("%d is not a palindrome.", original);
+            
+     return 0;
+ }
+                   
+</code>
+<button  id="btn-copy12" onclick="copy('content-copy12')" class="btn" >copy</button> 
+</pre>
+</li>
+
+
+
+<li><b id="section13">Prime number or Not</b>
+    <p class="detail">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates voluptate quisquam recusandae voluptatem deleniti expedita unde harum vitae enim distinctio autem iure, sed dicta ad corporis voluptatum repellendus officia magnam.</p>
+    <pre class="panda"><code id="content-copy13">
+#include &lt;stdio.h&gt;
+int main() {
+int n, i, flag = 0;
+             
+     printf("Enter a positive integer: ");
+     scanf("%d", &n);
+            
+     for (i = 2; i &lt;= n / 2; ++i) {
+     // condition for non-prime
+     if (n % i == 0) {
+        flag = 1;
+         break;
+        }
+     }
+            
+     if (n == 1) {
+    printf("1 is neither prime nor composite.");
+              } 
+     else {
+         if (flag == 0)
+             printf("%d is a prime number.", n);
+         else
+             printf("%d is not a prime number.", n);
+          }
+            
+    return 0;
+ }
+                   
+</code>
+<button  id="btn-copy13" onclick="copy('content-copy13')" class="btn" >copy</button> 
+</pre>
+</li>
+
+
+
+<li><b id="section14">Armstrong number or Not</b>
+    <p class="detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolorum rem repellat aut quidem tempora porro nisi ipsa debitis, fuga quos id eaque perspiciatis at asperiores vel, dignissimos quod enim!</p>
+    <pre class="panda"><code id="content-copy14">
+#include &lt;stdio.h&gt;
+int main() {
+int num, originalNum, remainder, result = 0;
+           
+    printf("Enter a three-digit integer: ");
+    scanf("%d", &num);
+    originalNum = num;
+        
+    while (originalNum != 0) {
+    // remainder contains the last digit
+     remainder = originalNum % 10;
+                
+    result += remainder * remainder * remainder;
+                
+    // removing last digit from the orignal number
+    originalNum /= 10;
+    }
+        
+    if (result == num)
+        printf("%d is an Armstrong number.", num);
+    else
+         printf("%d is not an Armstrong number.", num);
+        
+    return 0;
+ }
+                       
+</code>
+<button  id="btn-copy14" onclick="copy('content-copy14')" class="btn" >copy</button> 
+</pre>
+</li>
+    </ol>
+ </div>
+
+ 
+ 
+</main>
+
+<footer> 
+    <p>THIS WEB PAGE CREATED BY ASHWIN CHIMANKAR @2022<br>
+    <a href="ashwinchimankar@gmail.com">ashwinchimankar@gmail.com</a></p>
+  </footer>
+ </body>
+  <script src="maincode.js"></script>
+ </html>

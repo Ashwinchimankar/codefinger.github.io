@@ -1,0 +1,422 @@
+
+body,html {padding:0;scroll-behavior: smooth;  }
+
+body {
+  font-family: 'Karla', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  background-color: #e3e3ec;
+ 
+  margin: 0px;
+  padding: 0px;
+  /*background: url('abc.png');*/
+}
+
+.dropbtn {
+  background-color: rgb(91, 141, 214);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  
+}
+
+.dropdown {
+  float: left;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  
+
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
+
+
+
+#myBtn {
+  
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  font-size: 20px;
+  border: none;
+  background-color:  rgb(91, 141, 214);
+  color: black;
+  cursor: pointer;
+  padding: 15px 30px;
+  border-radius: 5px;
+ 
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position:fixed;
+  height: 70px;
+  top: 0;
+  width: 100%;
+}
+.navelement{
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login-container button {
+  float: right;
+  padding: 10px;
+  padding-top: 10px;
+  margin-top: 15px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.login-container button:hover {
+  background: rgb(127, 147, 236);
+}
+.logo{
+  
+  float: left;
+  color: #f2f2f2;
+  padding-left: 20px;
+  padding-top: 5px;
+}
+.logoname{
+  float: right;
+  
+}
+
+.detail{
+  font-style: normal;
+  font-size: 17px;
+}
+
+.linksection {
+  position: fixed;
+  left: 0;
+  text-align: end;
+ background-color: rgb(91, 141, 214); 
+  width: 250px;
+  margin: 35px 0px;
+
+  
+}
+.link{
+  border-radius: 3px;
+  margin: 0px 3px;
+  text-align: left;
+ 
+}
+.linksection a{
+  text-decoration: none;
+  color:white;
+  
+  
+}
+
+.linksection a:hover{
+  background: #ddd;
+  color: black;
+}
+
+
+.linksection a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: left;
+  padding: 14px 10px;
+  text-decoration: none;
+  font-size: 17px;
+  
+}
+#linksec{
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 90%;
+}
+
+
+
+.panda{
+ 
+  background: #272822;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  overflow: auto;
+  border-left: 4px solid  rgb(91, 141, 214);
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+.btn{
+  float: right;
+  border-radius: 3px;
+  border: none;
+  padding: 5px 3px;
+  background-color: rgb(91, 141, 214);
+  
+}
+.btn:hover{
+  cursor: pointer;
+}
+
+
+.navelement a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navelement a:hover {
+  background: #ddd;
+  color: black;
+  border-bottom: 4px solid  rgb(91, 141, 214);
+}
+
+
+
+.container1{
+  /* background-color: red; */
+  width: 55vw;
+  padding: 70px 50px;
+  margin: auto;
+  list-style-position: inside;
+  
+  /*font-family: 'Roboto', sans-serif;
+  font-weight: bold;*/
+}
+
+.form-container {
+  width: 600px;
+  margin: auto;
+ 
+}
+
+.form-box{
+  background-color: #333;
+  
+  padding: 0px 15px;
+  height: 700px;
+ overflow: hidden;
+ border-radius: 5px;
+  
+}
+.img{
+  margin: 80px 0px;
+  padding: 0px 10px;
+}
+
+
+  input[type=text],input[type=mail],textarea {
+    width: 530px;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit button */
+  .formbtn {
+    background-color:rgb(91, 141, 214);
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+  border-radius: 5px;
+   
+  }
+  
+  #color{
+    color: #f1f1f1;
+  }
+
+/*query for code font size*/ 
+  @media screen and (max-width: 550px){
+    .container1{ font-size: 12px ; }
+  }
+  
+/*query for code detail font size*/
+  @media screen and (max-width: 550px){
+    .detail{ font-size: 15px ; }
+  }
+
+/*for container size*/
+  @media screen and (max-width: 260px){
+    .container1{ width: auto ; padding: 70px 8px; }
+  }
+
+@media screen and (max-width: 550px){
+  .container1{ width: auto ; margin: auto; padding: 70px 10px;}
+}
+
+@media screen and (max-width: 550px){
+  .container1{ width: auto ; margin: auto; padding: 70px 10px;}
+}
+
+@media screen and (max-width: 1000px){
+  .container1{ width: auto  ; margin: auto; padding: 70px 10px; }
+}
+
+
+@media screen and (max-width: 580px){
+  .img{ background-image: none; background-color: #333;}
+}
+
+
+
+@media screen and (max-width: 570px){
+  #myBtn{ padding: 8px 8px; font-size: 15px;}
+}
+
+
+/*for size bar */
+
+@media screen and (max-width : 1920px){
+  .linksection{
+  visibility:visible;
+  }
+}
+@media screen and (max-width : 1000px){
+ 
+ .linksection{
+  visibility:hidden;
+  }
+}
+
+
+
+
+@media screen and (max-width : 1920px){
+  .navelement{
+  visibility:visible;
+  }
+}
+@media screen and (max-width : 800px){
+ 
+ .navelement{
+  visibility:hidden;
+  }
+}
+
+
+
+
+
+footer {
+  text-align: center;
+  padding: 1px;
+  background-color: rgb(51 51 51);
+  color: white;
+  overflow: hidden;
+}
+
+footer a{
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
