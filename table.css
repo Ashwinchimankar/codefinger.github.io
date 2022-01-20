@@ -27,6 +27,29 @@ body {
     transform: translate(-50%, -50%);
   }
 
+
+  .abc{
+  
+    margin: 0px 1px;
+    text-align: left;
+    text-decoration: none;
+    color: #ddd;
+    writing-mode: vertical-rl;
+  
+  
+  }
+  .navelement2{
+    position: fixed;
+    left: 0;
+    text-align: end;
+   background-color: #ddd; 
+    width: 25px;
+    margin: 95px 0px;
+    background-color: #333;
+    
+  }
+  
+
   .login-container button {
     float: right;
     padding: 10px;
@@ -99,6 +122,22 @@ td, th {
   @media screen and (max-width: 470px){
     footer{ width: auto;}
   }
+  
+
+
+
+  @media screen and (max-width : 1920px){
+    .navelement2{
+    visibility:hidden;
+    }
+  }
+  @media screen and (max-width : 800px){
+   
+   .navelement2{
+    visibility:visible;
+    }
+  }
+  
   
   
 footer {

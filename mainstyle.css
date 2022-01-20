@@ -1,6 +1,9 @@
 
 
 body,html {padding:0;scroll-behavior: smooth;  }
+*{
+  box-sizing: border-box;
+}
 
 body {
     font-family: 'Karla', sans-serif;
@@ -53,9 +56,10 @@ body {
       text-align: center;
       padding: 60px 20px;
       font-weight: bold;
-      color: #333;;
+      color: #ddd;;
       font-size: 90px;
       text-shadow: 0 0 10px  rgb(91, 141, 214);
+      
      
   
   }
