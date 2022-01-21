@@ -124,6 +124,24 @@ td, th {
   }
   
 
+  @media screen and (max-width: 1000px){
+    table{ width: auto  ; margin: auto; padding: 10px 10px; }
+  }
+
+  
+
+@media screen and (max-width : 1920px){
+  .navelement{
+  visibility:visible;
+  }
+}
+@media screen and (max-width : 800px){
+ 
+ .navelement{
+  visibility:hidden;
+  }
+}
+
 
 
   @media screen and (max-width : 1920px){
