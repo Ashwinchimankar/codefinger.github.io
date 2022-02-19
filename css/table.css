@@ -1,0 +1,253 @@
+body,html {padding:0;scroll-behavior: smooth;  }
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  background-color: #e3e3ec;
+ 
+  margin: 0px;
+  padding: 0px;
+  /*background: url('abc.png');*/
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position:fixed;
+    height: 70px;
+    top: 0;
+    width: 100%;
+  }
+  .navelement{
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+
+ 
+
+  /* Hambargur Sidebar*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:  rgb(91, 141, 214);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #111;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 50px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+  .login-container{
+    float: right;
+  
+   padding: 0rem 0.5rem;
+    margin-top: 18px;
+    margin-right: 16px;
+    background: rgb(127, 147, 236);
+   
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+ 
+  .logo{
+    
+    float: left;
+    color: #f2f2f2;
+    padding-left: 20px;
+    padding-top: 5px;
+  }
+  .logoname{
+    float: right;
+    
+  }
+
+  .navelement a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .navelement a:hover {
+    background: #ddd;
+    color: black;
+    border-bottom: 4px solid  rgb(91, 141, 214);
+  }
+
+
+
+table{
+    margin: 6rem auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.heading{
+    text-align: center;
+}
+  
+td, th {
+    border: solid #dddddd;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: rgb(91, 141, 214);
+  }
+
+
+
+
+  @media screen and (max-width: 650px){
+    .hambgr{ font-size: 25px !important;
+    padding: 0px 1px;}
+  }
+  
+  @media screen and (max-width: 400px){
+    .hambgr{ font-size: 20px !important;
+    padding: 0px 1px;}
+  }
+  
+  @media screen and (max-width: 650px){
+    .login-container{ margin-top: 15px !important;}
+  }
+  
+  @media screen and (max-width: 400px){
+    .login-container{margin-top: 30px !important;
+    }
+  }
+  
+  
+  
+  
+  @media screen and (max-width: 650px){
+    .logo{ padding-left: 5px; padding-top: 10px;}
+  }
+  
+  
+  @media screen and (max-width: 650px){
+    .logoname{ font-size: 14px;}
+  }
+  
+  @media screen and (max-width: 650px){
+    .finbtn{ margin: 2px;}
+  }
+  
+
+
+
+  @media screen and (max-width: 500px){
+    .media-logo{ height: 1.2rem !important;}
+  }
+
+
+
+
+
+
+  @media screen and (max-width: 1000px){
+    table{ width: auto  ; margin: auto; padding: 10px 10px; }
+  }
+
+  
+
+@media screen and (max-width : 1920px){
+  .navelement{
+  visibility:visible;
+  }
+}
+@media screen and (max-width : 800px){
+ 
+ .navelement{
+  visibility:hidden;
+  }
+}
+
+
+@media screen and (max-width : 1920px){
+  .login-container{
+  visibility:hidden;
+  }
+}
+@media screen and (max-width : 800px){
+ 
+ .login-container{
+  visibility:visible;
+  }
+}
+
+
+
+
+  
+
+
+
+
+
+footer {
+  display: flex;
+  justify-content: left;
+  padding: 5px;
+  background-color: rgb(51 51 51);
+  color: #fff;
+}
+
+.media{
+position: absolute;
+right: 10px;
+margin-top: 1rem;
+}
+.media-logo{
+  background-repeat: no-repeat;
+height: 2rem;
+width: auto;
+}
+
+
+
+  
+ 

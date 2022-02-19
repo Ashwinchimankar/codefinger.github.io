@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="indexpage.css">
+        <link rel="stylesheet" href="./css/indexpage.css">
 
      
     <title>c language</title>
@@ -16,13 +16,13 @@
 
 <body>
     
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593;</button>
     <nav class="navbar">
         <a href="index.html" target="_self" >
         <div class="logo">
             <span >
               
-                    <img src="finger.png" class="finbtn"/>
+                    <img src="./imges/site-logo/finger.png" class="finbtn"/>
                   
                 </span>
                 
@@ -42,8 +42,20 @@
     </div>
   
         <div class="login-container"><!--buttons for Login/Sign Up-->
-            <button type="submit">Login/Sign Up</button>
-        </div> 
+          
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="c_language.html" >C Language</a>
+    <a href="data_structure.html">Data Structure</a>
+    <a href="table.html" >Time complexity</a>
+    <a href="##" >Books</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="##" >Login</a>
+  </div>
+  
+
+  <span class="hambgr" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>  
 
 
         <div class="linksection">
@@ -66,15 +78,7 @@
             </div>
 
 
-            <div class="navelemrnt2">
-                <div class="navelement2">
-                               
-        <a href="c_language.html" class="abc" title="C Language">C Lang</a><br><hr>
-        <a href="data_structure.html" class="abc"  title="Data Structure">Data Str</a><br><hr>
-        <a href="feedback.html" class="abc"  title="Feed Back">FDBK</a><br><hr>
-        <a href="table.html" class="abc"  title="Time Complexity">Complexity</a><br>
-    </div>
-            </div>
+        
         
     </nav>
       
@@ -90,7 +94,7 @@
  <div class="container1">
     <ol>
         <li><b id="section1">Your First C Program </b>
-            <p class="detail">#include <stdio.h>, stdio is the library where the function printf is defined. printf is used for generating output. Before using this function, we have to first include the required file, also known as a header file (.h).
+            <p class="detail">#include &lt;stdio.h&gt;, stdio is the library where the function printf is defined. printf is used for generating output. Before using this function, we have to first include the required file, also known as a header file (.h).
 
                 You can also create your own functions, group them in header files and declare them at the top of the program to use them. To include a file in a program, use pre-processor directive</p>
                 
@@ -110,7 +114,7 @@ return 0;
 
             
   <li><b id="section2">Print integer (User Input)</b>
-    <p class="detail">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio quae error consequatur eum repellat, sequi unde dolorum delectus omnis! Praesentium, error quisquam temporibus exercitationem iure minus pariatur labore minima iste.</p>
+    <p class="detail">In this example, the integer entered by the user is stored in a variable and printed on the screen.</p>
           <pre class="panda"><code id="content-copy2">
  #include &lt;stdio.h&gt;
  int main() {   
@@ -130,7 +134,7 @@ printf("Enter an integer: ");
     
 
  <li><b id="section3">Addition of two intger.</b>
-    <p class="detail">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum ex ullam repellat voluptatibus, repudiandae nulla veritatis unde consequuntur similique tenetur labore enim debitis pariatur inventore dolorem dolore? Recusandae, hic molestias.</p>
+    <p class="detail">The addition of two numbers in C language is the arithmetic operation of adding them and printing their sum on the screen. For example, if the input is 5 and 6, the output is 11.</p>
         <pre class="panda"><code id="content-copy3">
             
  #include &lt;stdio.h&gt;
@@ -154,7 +158,7 @@ int number1, number2, sum;
 
 
  <li><b id="section4">multiply two decimal value (Floting point value)</b>
-    <p class="detail">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius rerum sapiente consequatur sed! Ad, eaque! Non labore rem laboriosam ea, distinctio debitis, suscipit, eveniet vel id dolorum accusamus quaerat eos?</p>
+    <p class="detail">In the below program to multiply two floating point numbers, the user is first asked to enter two floating numbers and the input is scanned using the scanf() function and stored in the variables A and B. Then, the variables A and B are multiplied using the arithmetic operator * and the product is stored in the variable product.</p>
           <pre class="panda"><code id="content-copy4">
             
  #include &lt;stdio.h&gt;
@@ -179,7 +183,7 @@ double a, b, product;
 
 
 <li><b id="section5">swapping of two number using temp veriable</b>
-    <p class="detail">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas vitae excepturi doloremque eius quae error repudiandae provident amet? Corrupti perspiciatis molestias dolor accusantium error, quaerat animi nesciunt quibusdam expedita maiores!</p>
+    <p class="detail">This program is used to swap values of two variables using the third variable, which is the temporary variable.</p>
     <pre class="panda"><code id="content-copy5">
         
  #include&lt;stdio.h&gt;
@@ -214,8 +218,7 @@ return 0;
 
 <li><b id="section6">Check Even Or Odd.</b>
     <p class="detail">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint adipisci numquam ducimus incidunt ex alias, assumenda consequuntur officiis temporibus sit aut magni repudiandae sed recusandae dignissimos quaerat aspernatur nesciunt vitae!
-    </p>
+        If a number is exactly divisible by 2 then its an even number else it is an odd number. In this article we have shared ways( C programs) to check whether the input number is even or odd. 1) Using Modulus operator(%).</p>
     <pre class="panda"><code id="content-copy6">
 #include &lt;stdio.h&gt;
  int main() {
@@ -240,7 +243,7 @@ return 0;
 
        
 <li><b id="section7">Find the largest among three numbers</b>
-    <p class="detail">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi iste saepe, cum nobis tenetur ipsa aspernatur neque et, voluptatum repudiandae hic? Esse ullam ad adipisci voluptates commodi sunt obcaecati natus.</p>
+    <p class="detail">To find the largest number among given three numbers in C programming, you have to ask from the user to enter any three number, now start checking which one is the largest using if-else block as shown in the program given below:</p>
     <pre class="panda"><code id="content-copy7">
  #include &lt;stdio.h&gt;
  int main() {
@@ -270,7 +273,7 @@ return 0;
        </li>
 
  <li><b id="section8">Leap year check</b>
-    <p class="detail">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, aperiam nihil quod, reprehenderit autem optio suscipit iusto saepe facere tenetur sed unde ad ipsa deserunt culpa quasi blanditiis incidunt magni!</p>
+    <p class="detail">A leap year is exactly divisible by 4 except for century years (years ending with 00). The century year is a leap year only if it is perfectly divisible by 400.</p>
         <pre class="panda"><code id="content-copy8">
  #include <stdio.h>
 int main() 
@@ -307,7 +310,7 @@ int main()
            </li>
 
 <li><b id="section9">Factorial numbers.</b>
-    <p class="detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, id accusantium, quaerat doloremque earum quisquam porro mollitia suscipit dolore iure et quibusdam, hic nulla unde laborum illum sequi facere repellendus?</p>
+    <p class="detail">Factorial numbers.Factorial of a non-negative integer, is multiplication of all integers smaller than or equal to n. For example factorial of 6 is 6*5*4*3*2*1 which is 720.</p>
         <pre class="panda"><code id="content-copy9">
  #include &lt;stdio.h&gt;
 int main()
@@ -338,7 +341,7 @@ return 0;
 
 
 <li><b id="section10">Multipication table.</b>
-    <p class="detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolore dicta delectus expedita necessitatibus, incidunt hic commodi, voluptatibus consequatur blanditiis, tenetur suscipit nemo accusamus iusto quia ratione quam optio debitis?</p>
+    <p class="detail">The program below takes an integer input from the user and generates the multiplication tables up to 10. Here, the user input is stored in the int variable n. Then, we use a for loop to print the multiplication table up to 10.</p>
     <pre class="panda"><code id="content-copy10">
  #include &ll;stdio.h&gt;
 int main() {
@@ -358,7 +361,7 @@ int main() {
 
 
 <li><b id="section11">Fibonacci Sequence</b>
-    <p class="detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita libero iste, nam architecto omnis asperiores, itaque totam voluptatem vero repellat exercitationem. Omnis expedita perferendis consectetur, dignissimos eum illum labore iusto!</p>
+    <p class="detail">The Fibonacci sequence is a sequence where the next term is the sum of the previous two terms. The first two terms of the Fibonacci sequence are 0 followed by 1. The Fibonacci sequence: 0, 1, 1, 2, 3, 5, 8, 13, 21</p>
     <pre class="panda"><code id="content-copy11">
  #include &lt;stdio.h&gt;
 int main() {
@@ -396,7 +399,7 @@ for (i = 3; i &lt;= n; ++i) {
 
 
 <li><b id="section12">Palindrome Check</b>
-    <p class="detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, ut. Quam repellat praesentium aliquid dolorum hic? Vero fugit illum, necessitatibus, quam eligendi, alias cum aliquam velit nisi optio ea. Eaque.</p>
+    <p class="detail">An integer is a palindrome if the reverse of that number is equal to the original number.</p>
     <pre class="panda"><code id="content-copy12">
 #include &lt;stdio.h&gt;
  int main() {
@@ -430,7 +433,7 @@ int n, reversed = 0, remainder, original;
 
 
 <li><b id="section13">Prime number or Not</b>
-    <p class="detail">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates voluptate quisquam recusandae voluptatem deleniti expedita unde harum vitae enim distinctio autem iure, sed dicta ad corporis voluptatum repellendus officia magnam.</p>
+    <p class="detail">A prime number is a positive integer that is divisible only by 1 and itself. For example: 2, 3, 5, 7, 11, 13, 17.</p>
     <pre class="panda"><code id="content-copy13">
 #include &lt;stdio.h&gt;
 int main() {
@@ -468,7 +471,9 @@ int n, i, flag = 0;
 
 
 <li><b id="section14">Armstrong number or Not</b>
-    <p class="detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolorum rem repellat aut quidem tempora porro nisi ipsa debitis, fuga quos id eaque perspiciatis at asperiores vel, dignissimos quod enim!</p>
+    <p class="detail">Armstrong number is a number that is equal to the sum of cubes of its digits. For example 0, 1, 153, 370, 371 and 407 are the Armstrong numbers.
+
+        Let's try to understand why 153 is an Armstrong number.</p>
     <pre class="panda"><code id="content-copy14">
 #include &lt;stdio.h&gt;
 int main() {
@@ -507,10 +512,25 @@ int num, originalNum, remainder, result = 0;
  
 </main>
 
-<footer> 
-    <p>THIS WEB PAGE CREATED BY ASHWIN CHIMANKAR @2022<br>
-    <a href="ashwinchimankar@gmail.com">ashwinchimankar@gmail.com</a></p>
-  </footer>
+<footer>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <p class="copyright">  &#169;  2022 CodeFinger</p>
+    <div class="media">
+        <span class="fb"> 
+            <a href="##">
+            <img src="./imges/media-img/fb.png" alt="Facebook" class="media-logo"></a> </span>
+        <span class="git">
+            <a href="##">
+             <img src="./imges/media-img/git.png" alt="github" class="media-logo"> </a></span>
+        <span class="linkedin"> 
+            <a href="##">
+            <img src="./imges/media-img/linkedin.png" alt="linkedin" class="media-logo"></a> </span>
+        <span class="insta">
+            <a href="##">
+             <img src="./imges/media-img/insta.png" alt="instagram" class="media-logo"> </a></span>
+    </div>
+</footer>
  </body>
-  <script src="maincode.js"></script>
+  <script src="./js-file/maincode.js"></script>
+ 
  </html>

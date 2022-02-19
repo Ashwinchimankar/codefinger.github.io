@@ -69,3 +69,12 @@ function topFunction() {
   
   document.documentElement.scrollTop = 0;
 }
+
+//code for hamburger
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}

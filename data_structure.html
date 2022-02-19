@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="indexpage.css">
+        <link rel="stylesheet" href="./css/indexpage.css">
         
    
         
@@ -22,7 +22,7 @@
     <div class="logo">
       <span >
   
-          <img src="finger.png" class="finbtn"/>
+          <img src="./imges/site-logo/finger.png" class="finbtn"/>
 
         </span>
         &nbsp;
@@ -39,7 +39,18 @@
     </b>
   </div>
     <div class="login-container"><!--buttons for Login/Sign Up-->
-      <button type="submit">Login/Sign Up</button>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="c_language.html" >C Language</a>
+        <a href="data_structure.html">Data Structure</a>
+        <a href="table.html" >Time complexity</a>
+        <a href="##" >Books</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="##" >Login</a>
+      </div>
+      
+    
+      <span class="hambgr" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
   </div> 
 
 
@@ -61,15 +72,7 @@
       
   </div>
   </div>
-  <div class="navelemrnt2">
-    <div class="navelement2">
-                   
-<a href="c_language.html" class="abc" title="C Language">C Lang</a><br><hr>
-<a href="data_structure.html" class="abc"  title="Data Structure">Data Str</a><br><hr>
-<a href="feedback.html" class="abc"  title="Feed Back">FDBK</a><br><hr>
-<a href="table.html" class="abc"  title="Time Complexity">Complexity</a><br>
-</div>
-</div>
+ 
 
 </nav>
   
@@ -84,9 +87,9 @@
  
 
         <div class="container1">
-        <ol>
-            <li><h4>SEARCHING TECHNIQUE</h4><b id="section1">Linear search algorithm</b>
-              <p class="detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolorum rem repellat aut quidem tempora porro nisi ipsa debitis, fuga quos id eaque perspiciatis at asperiores vel, dignissimos quod enim!</p>
+          <ol>
+          <li><h4>SEARCHING TECHNIQUE</h4><b id="section1">Linear search algorithm</b>
+              <p class="detail">Linear search is a very simple search algorithm. In this type of search, a sequential search is made over all items one by one. Every item is checked and if a match is found then that particular item is returned, otherwise the search continues till the end of the data collection.</p>
                 <pre class="panda"><code id="content-copy1">
 // Linear Search in C
 
@@ -116,7 +119,9 @@ int main() {
     </li>
      
     <b id="section2">Binary search algorithm</b>
-    <p class="detail">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam ipsa enim repellendus? Cumque perspiciatis impedit suscipit necessitatibus repellendus laudantium quia quos sequi laboriosam, hic obcaecati modi sed amet a totam!</p> 
+    <p class="detail">Binary Search is a search algorithm that is used to find the position of an element (target value ) in a sorted array. The array should be sorted prior to applying a binary search.
+
+      Binary search is also known by these names, logarithmic search, binary chop, half interval search.</p> 
         <pre class="panda"><code id="content-copy2">
 // Binary Search in C
 
@@ -161,7 +166,7 @@ int main() {
 
 
 <li><h4>SORTING TECHNIQUE</h4><b id="section3">Bubble sort algorithm</b>
-  <p class="detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto esse totam voluptatum ex consequuntur cupiditate commodi ullam nam. Beatae maiores ad tempore possimus magni fuga animi inventore blanditiis iure atque?</p>
+  <p class="detail">Bubble sort in C is a straightforward sorting algorithm that checks and swaps elements if they are not in the intended order. It compares two adjacent elements to find which one is greater or lesser and switches them based on the given condition until the final place of the element is found.</p>
     <pre class="panda"><code id="content-copy3">
 // Bubble sort in C
 
@@ -217,7 +222,9 @@ void bubbleSort(int array[], int size) {
 
 
 <li><b id="section4">Selection sort algorithm</b>
-  <p class="detail">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, quaerat! Nam, ex excepturi repudiandae quas suscipit cum laborum. Doloremque quibusdam quod modi placeat id quasi ea dolorem nostrum officiis quo.</p>
+  <p class="detail">Selection sort is a simple sorting algorithm. This sorting algorithm is an in-place comparison-based algorithm in which the list is divided into two parts, the sorted part at the left end and the unsorted part at the right end. Initially, the sorted part is empty and the unsorted part is the entire list.
+
+    The smallest element is selected from the unsorted array and swapped with the leftmost element, and that element becomes a part of the sorted array. This process continues moving unsorted array boundary by one element to the right.</p>
     <pre class="panda"><code id="content-copy4">
 // Selection sort in C
 
@@ -270,7 +277,7 @@ void bubbleSort(int array[], int size) {
 
 
        <li><b id="section5">Insertion sort algorithm</b>
-        <p class="detail">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus doloremque consectetur adipisci voluptatum, asperiores at modi veniam voluptatibus inventore illo iste cumque a expedita perferendis, necessitatibus blanditiis autem iusto sint?</p>
+        <p class="detail">Insertion sort algorithm. Insertion sort is a simple sorting algorithm that works similar to the way you sort playing cards in your hands. The array is virtually split into a sorted and an unsorted part. Values from the unsorted part are picked and placed at the correct position in the sorted part.</p>
 <pre class="panda"><code id="content-copy5">
  // Insertion sort in C
 
@@ -317,7 +324,7 @@ void bubbleSort(int array[], int size) {
 
 
        <li><b id="section6">Merge sort algorithm</b>
-        <p class="detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, aut laboriosam veniam rerum atque optio odit temporibus quaerat at rem accusantium et ea maxime nesciunt sequi repellat obcaecati cupiditate accusamus.</p>
+        <p class="detail">Merge Sort is a Divide and Conquer algorithm. It divides the input array into two halves, calls itself for the two halves, and then merges the two sorted halves. The merge() function is used for merging two halves. The merge(arr, l, m, r) is a key process that assumes that arr[l..m] and arr[m+1..r] are sorted and merges the two sorted sub-arrays into one.</p>
   <pre class="panda"><code id="content-copy6">
 // Merge sort in C
 
@@ -413,7 +420,9 @@ void merge(int arr[], int p, int q, int r) {
 
        
         <li><b id="section7">Quick sort algorithm</b>
-          <p class="detail">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi quibusdam rerum itaque non beatae, tempore maiores, quas accusantium assumenda, facere officiis earum facilis iste molestiae exercitationem expedita suscipit recusandae est.</p>
+          <p class="detail">Quick sort is a highly efficient sorting algorithm and is based on partitioning of array of data into smaller arrays. A large array is partitioned into two arrays one of which holds values smaller than the specified value, say pivot, based on which the partition is made and another array holds values greater than the pivot value.
+
+            Quicksort partitions an array and then calls itself recursively twice to sort the two resulting subarrays.</p>
                  <pre class="panda"><code id="content-copy7">
 // Quick sort in C
 
@@ -502,7 +511,7 @@ void swap(int *a, int *b) {
 
 
         <li><b id="section8">Counting sort algorithm</b>
-          <p class="detail">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur officiis sequi eligendi libero vel, velit hic quisquam perferendis nam ipsam molestias illum molestiae eum cumque et, unde deleniti. Quidem, qui.</p>
+          <p class="detail">Counting sort is a sorting algorithm that sorts the elements of an array by counting the number of occurrences of each unique element in the array. The count is stored in an auxiliary array and the sorting is done by mapping the count as an index of the auxiliary array.</p>
                  <pre class="panda"><code id="content-copy8">
  // Counting sort in C programming
 
@@ -574,7 +583,9 @@ int output[10];
 
 
 <li><b id="section9">Bucket sort algorithm</b>
-  <p class="detail">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam quae sequi corporis sunt temporibus. Vel excepturi cupiditate facere labore, nostrum aliquid reprehenderit ipsam eveniet est, beatae minima! Adipisci, officiis pariatur.</p>
+  <p class="detail">Bucket Sort is a sorting algorithm that divides the unsorted array elements into several groups called buckets. Each bucket is then sorted by using any of the suitable sorting algorithms or recursively applying the same bucket algorithm.
+
+    Finally, the sorted buckets are combined to form a final sorted array.</p>
     <pre class="panda"><code id="content-copy9">
 // Bucket sort in C
 
@@ -736,7 +747,13 @@ int output[10];
 </li>
 
             <li><b id="section10">Heap sort algorithm</b>
-              <p class="detail">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor voluptatum autem cum quasi dicta molestias laudantium non est blanditiis, placeat, unde expedita, modi dolore repellat cumque. Dicta eius dignissimos voluptatem?</p>
+              <p class="detail">Heap sort processes the elements by creating the min-heap or max-heap using the elements of the given array. Min-heap or max-heap represents the ordering of array in which the root element represents the minimum or maximum element of the array.
+
+                Heap sort basically recursively performs two main operations -
+                
+                Build a heap H, using the elements of array.
+                Repeatedly delete the root element of the heap formed in 1st phase.
+                Before knowing more about the heap sort, let's first see a brief description of Heap.</p>
                      <pre class="panda"><code id="content-copy10">      
 // Heap Sort in C
 
@@ -808,7 +825,7 @@ int output[10];
 
 
          <li><h4>STACK IN DATA STRUCTURE</h4><b id="section11">implementation of stack</b>
-          <p class="detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia porro quisquam rerum dignissimos molestias. Nihil voluptate adipisci atque sapiente officiis nam magnam, mollitia deserunt incidunt doloremque repellat aspernatur consectetur dolorem?</p>
+          <p class="detail">Stack is an abstract data type with a bounded(predefined) capacity. It is a simple data structure that allows adding and removing elements in a particular order. Every time an element is added, it goes on the top of the stack and the only element that can be removed is the element that is at the top of the stack, just like a pile of objects.</p>
                  <pre class="panda"><code id="content-copy11">
 // Stack implementation in C
 
@@ -908,7 +925,9 @@ int count = 0;
 
 
     <li><h4>QUEUE IN DATA STRUCTURE</h4><b id="section12">implementation of queue </b>
-      <p class="detail">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet nesciunt quidem eos, veritatis repudiandae harum quasi voluptate vero. Nihil odio eum deleniti, labore omnis error quidem possimus dolorum architecto explicabo.</p>
+      <p class="detail">A queue in C is basically a linear data structure to store and manipulate the data elements. It follows the order of First In First Out (FIFO).
+
+        In queues, the first element entered into the array is the first element to be removed from the array.</p>
         <pre class="panda"><code id="content-copy12">
 // Queue implementation in C
 
@@ -989,7 +1008,7 @@ void display() {
  
  
 <li><h4>LINKED LIST IN DATA STRUCTURE</h4><b id="section13">Implementaion of linked list</b>
-  <p class="detail">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime beatae et est itaque aut ipsam, molestias ut, ex, alias explicabo sapiente illo voluptatum dolor dignissimos. A non alias veniam molestias!</p>
+  <p class="detail">A linked list is a sequence of data structures, which are connected together via links. Linked List is a sequence of links which contains items. Each link contains a connection to another link. Linked list is the second most-used data structure after array.</p>
     <pre class="panda"><code id="content-copy13">
 // Linked list implementation in C
 
@@ -1045,11 +1064,25 @@ void display() {
 </div>
 </main>
 
-<footer> 
-  <p>THIS WEB PAGE CREATED BY ASHWIN CHIMANKAR @2022<br>
-  <a href="ashwinchimankar@gmail.com">ashwinchimankar@gmail.com</a></p>
+<footer>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <p>  &#169;  2022 CodeFinger</p>
+  <div class="media">
+      <span class="fb"> 
+          <a href="##">
+          <img src="./imges/media-img/fb.png" alt="Facebook" class="media-logo"></a> </span>
+      <span class="git">
+          <a href="##">
+           <img src="./imges/media-img/git.png" alt="github" class="media-logo"> </a></span>
+      <span class="linkedin"> 
+          <a href="##">
+          <img src="./imges/media-img/linkedin.png" alt="linkedin" class="media-logo"></a> </span>
+      <span class="insta">
+          <a href="##">
+           <img src="./imges/media-img/insta.png" alt="instagram" class="media-logo"> </a></span>
+  </div>
 </footer>
  
   </body>
-  <script src="maincode.js"></script>
+  <script src="./js-file/maincode.js"></script>
  </html>

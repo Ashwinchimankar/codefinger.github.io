@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="table.css">
+        <link rel="stylesheet" href="./css/table.css">
         
    
         
@@ -22,7 +22,7 @@
         <div class="logo">
             <span >
                
-                    <img src="finger.png" class="finbtn"/>
+                    <img src="./imges/site-logo/finger.png" class="finbtn"/>
              
                 </span>
                 
@@ -40,23 +40,24 @@
     </b>
     </div>
         <div class="login-container"><!--buttons for Login/Sign Up-->
-            <button type="submit">Login/Sign Up</button>
+           <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="c_language.html" >C Language</a>
+                <a href="data_structure.html">Data Structure</a>
+                <a href="table.html" >Time complexity</a>
+                <a href="##" >Books</a>
+                <a href="feedback.html">Feedback</a>
+                <a href="##" >Login</a>
+  </div>
+  
+
+  <span class="hambgr" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
         </div> 
 
-        <div class="navelemrnt2">
-                <div class="navelement2">
-                               
-        <a href="c_language.html" class="abc" title="C Language">C Lang</a><br><hr>
-        <a href="data_structure.html" class="abc"  title="Data Structure">Data Str</a><br><hr>
-        <a href="feedback.html" class="abc"  title="Feed Back">FDBK</a><br><hr>
-        <a href="table.html" class="abc"  title="Time Complexity">Complexity</a><br>
-    </div>
-            </div>
+      
         
     </nav>
-
-<div class="table">
-    <div class="center-table">
+    
     <table>
         <th colspan="4"  class="heading">
             Time complexity table for all algorithm
@@ -122,15 +123,26 @@
             <td>O(n+k)</td>
         </tr>
       </table>
+
+<footer>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <p>  &#169;  2022 CodeFinger</p>
+    <div class="media">
+        <span class="fb"> 
+            <a href="##">
+            <img src="./imges/media-img/fb.png" alt="Facebook" class="media-logo"></a> </span>
+        <span class="git">
+            <a href="##">
+             <img src="./imges/media-img/git.png" alt="github" class="media-logo"> </a></span>
+        <span class="linkedin"> 
+            <a href="##">
+            <img src="./imges/media-img/linkedin.png" alt="linkedin" class="media-logo"></a> </span>
+        <span class="insta">
+            <a href="##">
+             <img src="./imges/media-img/insta.png" alt="instagram" class="media-logo"> </a></span>
     </div>
-</div>
-
-
-
-<footer> 
-    <p>THIS WEB PAGE CREATED BY ASHWIN CHIMANKAR @2022<br>
-    <a href="ashwinchimankar@gmail.com">ashwinchimankar@gmail.com</a></p>
-  </footer>
+</footer>
 
 </body>
+<script src="./js-file/maincode.js"></script>
 </html>

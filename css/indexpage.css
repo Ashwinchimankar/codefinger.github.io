@@ -19,8 +19,8 @@ body {
 #myBtn {
   
   position: fixed;
-  bottom: 20px;
-  right: 30px;
+  bottom: 4rem;
+  right: 1rem;
   font-size: 20px;
   border: none;
   background-color:  rgb(91, 141, 214);
@@ -32,7 +32,8 @@ body {
 }
 
 .navbar {
-  overflow: hidden;
+  
+ overflow: hidden;
   background-color: #333;
   position:fixed;
   height: 70px;
@@ -48,55 +49,75 @@ body {
 }
 
 
-.abc{
-  
-  margin: 0px 1px;
-  text-align: left;
-  text-decoration: none;
-  color: #ddd;
-  writing-mode: vertical-rl;
-  padding: 5px 2px;
 
-
-}
-.navelement2{
+/* Hambargur Sidebar*/
+.sidenav {
+  height: 100%;
+  width: 0;
   position: fixed;
+  z-index: 1;
+  top: 0;
   left: 0;
-  text-align: end;
- background-color: #ddd; 
-  width: 25px;
-  margin: 95px 0px;
-  background-color: #333;
-  border-radius: 3px;
-  
+  background-color:  rgb(91, 141, 214);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
 }
 
-.login-container button {
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #111;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 50px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+.login-container{
   float: right;
-  padding: 10px;
-  padding-top: 10px;
-  margin-top: 15px;
+
+ padding: 0rem 0.5rem;
+  margin-top: 18px;
   margin-right: 16px;
-  background: #ddd;
-  font-size: 17px;
+  background: rgb(127, 147, 236);
+ 
   border: none;
   cursor: pointer;
   border-radius: 5px;
 }
 
-.login-container button:hover {
-  background: rgb(127, 147, 236);
-}
 .logo{
   
   float: left;
   color: #f2f2f2;
-  padding-left: 20px;
-  padding-top: 5px;
+  padding-left: 1rem;
+    padding-top: 0.8rem;
 }
 .logoname{
   float: right;
   
+}
+
+.finger{
+  height: 3rem;
 }
 
 .detail{
@@ -174,6 +195,7 @@ body {
 }
 .btn:hover{
   cursor: pointer;
+  background-color: #45a049;
 }
 
 
@@ -193,7 +215,10 @@ body {
   border-bottom: 4px solid  rgb(91, 141, 214);
 }
 
-
+ol{
+  padding-left: 3px;
+  list-style-position: inside;
+}
 
 .container1{
   /* background-color: red; */
@@ -206,55 +231,49 @@ body {
   font-weight: bold;*/
 }
 
-.form-container {
-  width: 600px;
-  margin: auto ;
- 
-}
 
-.form-box{
-  background-color: #333;
-  
-  padding: 0px 15px;
-  height: 700px;
- overflow: hidden;
- border-radius: 5px;
-  
-}
+/*form start*/
+
 .img{
-  margin: 80px 10px;
-  padding: 0px 0px;
+  background-image: url('../imges/win-background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+padding: 5rem 0rem;
 }
 
+input[type=text],input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
 
-  input[type=text],input[type=mail],textarea {
-    width: 530px;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    border: none;
-    background: #f1f1f1;
-    resize: none;
-  }
-  
-  input[type=text]:focus, input[type=password]:focus {
-    background-color: #ddd;
-    outline: none;
-  }
-  
-  /* Set a style for the submit button */
-  .formbtn {
-    background-color:rgb(91, 141, 214);
-    color: white;
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
+input[type=submit] , input[type=reset] {
+  background-color:rgb(91, 141, 214);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit ]:hover {
+  background-color: #45a049;
+}
+
+.form-container {
+  width: 50%;
+  margin: auto;
   border-radius: 5px;
-   
-  }
-  
-  #color{
-    color: #f1f1f1;
-  }
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
 
 /*query for code font size*/ 
   @media screen and (max-width: 550px){
@@ -282,25 +301,66 @@ body {
 @media screen and (max-width: 1000px){
   .container1{ width: auto  ; margin: auto; padding: 70px 10px; }
 }
-
-
-
-
-
-@media screen and (max-width: 570px){
-  #myBtn{ padding: 8px 8px; font-size: 15px;}
+/*form Container*/
+@media screen and (max-width: 550px){
+  .form-container{ width: 80%;}
 }
 
 
 
-@media screen and (max-width: 1000px){
-  form{ width: auto  ; margin: auto; padding: 50px 10px; }
+
+@media screen and (max-width: 610px){
+  #myBtn{ padding: 8px 0.7rem; font-size: 20px;}
 }
 
 
 
-@media screen and (max-width: 390px){
-  footer{ font-size: 12px;}
+
+
+
+
+
+@media screen and (max-width: 500px){
+  .media-logo{ height: 1.2rem;}
+}
+
+
+
+@media screen and (max-width: 650px){
+  .hambgr{ font-size: 25px !important;
+  padding: 0px 1px;}
+}
+
+@media screen and (max-width: 400px){
+  .hambgr{ font-size: 20px !important;
+  padding: 0px 1px;}
+}
+
+@media screen and (max-width: 650px){
+  .login-container{ margin-top: 15px !important;}
+}
+
+@media screen and (max-width: 400px){
+  .login-container{margin-top: 30px !important;
+  }
+}
+
+
+
+
+@media screen and (max-width: 650px){
+  .logo{ padding-left: 5px; padding-top: 10px;}
+}
+
+
+@media screen and (max-width: 650px){
+  .logoname{ font-size: 14px;}
+}
+
+
+
+@media screen and (max-width: 500px){
+  .media-logo{ height: 1.2rem !important;}
 }
 
 
@@ -336,13 +396,13 @@ body {
 
 
 @media screen and (max-width : 1920px){
-  .navelement2{
+  .login-container{
   visibility:hidden;
   }
 }
 @media screen and (max-width : 800px){
  
- .navelement2{
+ .login-container{
   visibility:visible;
   }
 }
@@ -352,17 +412,25 @@ body {
 
 
 
+
+
 footer {
-  text-align: center;
-  padding: 1px;
+  display: flex;
+  justify-content: left;
+  padding: 5px;
   background-color: rgb(51 51 51);
-  color: white;
-  overflow: hidden;
+  color: #fff;
 }
 
-footer a{
-  text-decoration: none;
-  color: #f2f2f2;
+.media{
+position: absolute;
+right: 10px;
+margin-top: 1rem;
+}
+.media-logo{
+  background-repeat: no-repeat;
+height: 2rem;
+width: auto;
 }
 
 
