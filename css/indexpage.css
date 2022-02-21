@@ -239,6 +239,7 @@ ol{
   background-repeat: no-repeat;
   background-attachment: fixed;  
   background-size: cover;
+  background-position: center center;
 padding: 5rem 0rem;
 }
 
