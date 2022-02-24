@@ -1,0 +1,128 @@
+
+/*goto top btn*/
+#myBtn {
+  
+    position: fixed;
+    bottom: 4rem;
+    right: 1rem;
+    font-size: 20px;
+    border: none;
+    background-color:  rgb(91, 141, 214);
+    color: black;
+    cursor: pointer;
+    padding: 15px 30px;
+    border-radius: 5px;
+    z-index: 5;
+  }
+
+
+
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    background-color:  rgb(91, 141, 214);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #111;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+
+  footer {
+    display: flex;
+    justify-content: left;
+    padding: 5px;
+    background-color: rgb(51 51 51);
+    color: #fff;
+  }
+  
+  .media{
+  position: absolute;
+  right: 10px;
+
+  }
+  .media-logo{
+    background-repeat: no-repeat;
+  height: 2rem;
+  width: auto;
+  }
+
+
+  @media screen and (max-width: 360px){
+    .card{ flex-direction: row;}
+  }
+
+  @media screen and (max-width: 360px){
+    .card{ width: auto;}
+  }
+
+  @media screen and (max-width: 360px){
+    .card{ margin-left: 5px !important ;}
+  }
+
+  @media screen and (max-width: 360px){
+    .box2{ margin-left: 5px !important ;}
+  }
+
+  @media screen and (max-width: 500px){
+    #slider{ height: 30rem !important;}
+  }
+
+
+  @media screen and (max-width: 360px){
+    #slider{ height: 25rem !important;}
+  }
+
+
+
+
+
+
+  
+
+
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 50px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+  @media screen and (max-width: 610px){
+    #myBtn{ padding: 8px 0.7rem; font-size: 20px;}
+  }
+
+
+  @media screen and (max-width: 500px){
+    .media-logo{ height: 1.2rem;}
+  }
+
+  @media screen and (max-width: 500px){
+    .media-logo{ height: 1.2rem !important;}
+  }
+    
